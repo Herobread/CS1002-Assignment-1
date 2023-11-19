@@ -1,0 +1,118 @@
+Testing CS1002 CS1002 Assignment 1
+- Looking for submission in a directory called 'Assignment1': Already in it!
+* BUILD TEST - 01_structure/build-all : pass
+* INFO - 01_structure/info-run : pass
+--- submission output ---
+****************
+Testing MetricVolume
+--------
+Checking MetricVolume class structure
+[GREEN] Check class MetricVolume exists
+        Found class MetricVolume.
+[GREEN] Check field to represent a number of millilitres exists
+        Found 'private int millilitres' as field to represent a number of millilitres.
+[GREEN] Check constructor to create metric volume with specified millilitres exists
+[GREEN] Check method to convert the metric volume into a baking measure exists
+        Found 'public BakingMeasure convert()' as method to convert the metric volume into a baking measure.
+--------
+Testing constructor to create metric volume with specified millilitres
+[GREEN] Create a metric volume as 10 millilitres
+        private int millilitres is '10' as expected.
+[GREEN] Create a metric volume as 345 millilitres
+        private int millilitres is '345' as expected.
+--------
+Testing method to convert the metric volume into a baking measure
+[GREEN] Convert object MetricVolume(3).
+        private int cups is '0' as expected.
+        private int tablespoons is '0' as expected.
+        private int teaspoons is '1' as expected.
+[GREEN] Convert object MetricVolume(8).
+        private int cups is '0' as expected.
+        private int tablespoons is '0' as expected.
+        private int teaspoons is '2' as expected.
+[GREEN] Convert object MetricVolume(55).
+        private int cups is '0' as expected.
+        private int tablespoons is '3' as expected.
+        private int teaspoons is '2' as expected.
+[GREEN] Convert object MetricVolume(263).
+        private int cups is '1' as expected.
+        private int tablespoons is '1' as expected.
+        private int teaspoons is '2' as expected.
+[GREEN] Convert object MetricVolume(480).
+        private int cups is '2' as expected.
+        private int tablespoons is '0' as expected.
+        private int teaspoons is '1' as expected.
+[GREEN] Convert object MetricVolume(1000).
+        private int cups is '4' as expected.
+        private int tablespoons is '3' as expected.
+        private int teaspoons is '2' as expected.
+--------
+Checking for any extra members in MetricVolume
+[GREEN] Check whether extra fields exist
+****************
+Testing BakingMeasure
+--------
+Checking BakingMeasure class structure
+[GREEN] Check class BakingMeasure exists
+        Found class BakingMeasure.
+[GREEN] Check field to represent the number of cups exists
+        Found 'private int cups' as field to represent the number of cups.
+[GREEN] Check field to represent the number of tablespoons exists
+        Found 'private int tablespoons' as field to represent the number of tablespoons.
+[GREEN] Check field to represent the number of teaspoons exists
+        Found 'private int teaspoons' as field to represent the number of teaspoons.
+[GREEN] Check constructor to create baking measure with specified number of cups, tablespoons and teaspoons exists
+[GREEN] Check method to pretty print the baking measure exists
+        Found 'public void prettyPrint()' as method to pretty print the baking measure.
+--------
+Testing constructor to create baking measure with specified number of cups, tablespoons and teaspoons
+[GREEN] Create a baking measure as 8 cups, 12 tablespoons and 1 teaspoon
+        private int cups is '8' as expected.
+        private int tablespoons is '12' as expected.
+        private int teaspoons is '1' as expected.
+[GREEN] Create a baking measure as 0 cups, 9 tablespoons and 2 teaspoon
+        private int cups is '0' as expected.
+        private int tablespoons is '9' as expected.
+        private int teaspoons is '2' as expected.
+--------
+Testing method to pretty print the baking measure
+[GREEN] Print object BakingMeasure(0, 0, 1).
+        The output from calling public void prettyPrint() is '1 teaspoon' as expected.
+[GREEN] Print object BakingMeasure(0, 5, 4).
+        The output from calling public void prettyPrint() is '5 tablespoons and 4 teaspoons' as expected.
+[GREEN] Print object BakingMeasure(1, 8, 0).
+        The output from calling public void prettyPrint() is '1 cup and 8 tablespoons' as expected.
+[GREEN] Print object BakingMeasure(30, 0, 1).
+        The output from calling public void prettyPrint() is '30 cups and 1 teaspoon' as expected.
+[GREEN] Print object BakingMeasure(12, 20, 12).
+        The output from calling public void prettyPrint() is '12 cups, 20 tablespoons and 12 teaspoons' as expected.
+--------
+Checking for any extra members in BakingMeasure
+[GREEN] Check whether extra fields exist
+****************
+OVERALL
+GREEN: 27 out of 27 tests passed
+---
+
+* BUILD TEST - 02_options/build-all : pass
+* COMPARISON TEST - 02_options/prog-run-opt_0.out : pass
+* COMPARISON TEST - 02_options/prog-run-opt_3.out : pass
+* BUILD TEST - 03_prettyPrint/build-all : pass
+* COMPARISON TEST - 03_prettyPrint/prog-run-pp_-1_0_0.out : pass
+* COMPARISON TEST - 03_prettyPrint/prog-run-pp_0_0_0.out : pass
+* COMPARISON TEST - 03_prettyPrint/prog-run-pp_0_0_1.out : pass
+* COMPARISON TEST - 03_prettyPrint/prog-run-pp_0_0_2.out : pass
+* COMPARISON TEST - 03_prettyPrint/prog-run-pp_0_2_2.out : pass
+* COMPARISON TEST - 03_prettyPrint/prog-run-pp_1_1_2.out : pass
+* COMPARISON TEST - 03_prettyPrint/prog-run-pp_2_-1_2.out : pass
+* COMPARISON TEST - 03_prettyPrint/prog-run-pp_2_0_1.out : pass
+* COMPARISON TEST - 03_prettyPrint/prog-run-pp_2_2_2.out : pass
+* BUILD TEST - 04_convert/build-all : pass
+* COMPARISON TEST - 04_convert/prog-run-conv_1000.out : pass
+* COMPARISON TEST - 04_convert/prog-run-conv_2.out : pass
+* COMPARISON TEST - 04_convert/prog-run-conv_263.out : pass
+* COMPARISON TEST - 04_convert/prog-run-conv_3.out : pass
+* COMPARISON TEST - 04_convert/prog-run-conv_480.out : pass
+* COMPARISON TEST - 04_convert/prog-run-conv_55.out : pass
+* COMPARISON TEST - 04_convert/prog-run-conv_8.out : pass
+23 out of 23 tests passed
